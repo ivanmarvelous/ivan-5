@@ -1,0 +1,25 @@
+# Pharma-Lab Management System
+
+A robust platform for managing pharmacy and laboratory operations.
+
+## Features
+- Product & Category Management (Drugs, Lab Equipment)
+- Service Listings & Bookings
+- POS for Pharmacy Sales
+- Employee/Admin Management
+- Profile & Settings
+- Payments Integration
+- Analytics Dashboard
+
+## Tech Stack
+- Backend: Node.js, Express, MongoDB
+- Frontend: React, Context API
+- Auth: JWT
+- Payments: Stripe/Paystack
+
+## Getting Started
+1. Clone the repo
+2. Set up `.env` with your MongoDB URI and other secrets
+3. Run `npm install` in both `backend` and `frontend`
+4. Start backend: `npm start` in `backend`
+5. Start frontend: `npm start` in `frontend`

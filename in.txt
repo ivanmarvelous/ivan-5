@@ -1,0 +1,21 @@
+pharma-lab-system/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middlewares/
+│   ├── utils/
+│   ├── app.js
+│   └── config/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── contexts/
+│   │   ├── hooks/
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+├── README.md
+└── .env

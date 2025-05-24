@@ -1,0 +1,22 @@
+// frontend/src/pages/Bookings.js
+import React, { useState } from 'react';
+
+export default function Bookings() {
+    const [form, setForm] = useState({ service: '', date: '' });
+    const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
+    const handleSubmit = e => {
+        e.preventDefault();
+        fetch('/api/bookings', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(form)
+        }).then(res => res.json()).then(data => alert('Booking created!'));
+    };
+    return (
+        <form onSubmit={handleSubmit}>
+            <input name="service" placeholder="Service ID" onChange={handleChange} required />
+            <input name="date" type="date" onChange={handleChange} required />
+            <button type="submit">Book</button>
+        </form>
+    );
+}
